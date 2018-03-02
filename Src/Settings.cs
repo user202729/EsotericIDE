@@ -26,12 +26,6 @@ namespace EsotericIDE
         [ClassifyNotNull]
         public Dictionary<string, LanguageSettings> LanguageSettings = new Dictionary<string, LanguageSettings>();
 
-#if DEBUG
-        private static void PostBuildCheck(IPostBuildReporter rep)
-        {
-            SettingsUtil.PostBuildStep<Settings>(rep);
-        }
-#endif
     }
 
     public abstract class LanguageSettings { }
