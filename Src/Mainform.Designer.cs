@@ -164,6 +164,7 @@
             this.txtSource.Size = new System.Drawing.Size(956, 292);
             this.txtSource.TabIndex = 2;
             this.txtSource.KeyDown += new System.Windows.Forms.KeyEventHandler(this.sourceKeyDown);
+            this.txtSource.MaxLength = 0;
             // 
             // lblInfo
             // 
